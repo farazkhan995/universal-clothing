@@ -68,13 +68,3 @@ const SignUpForm = () => {
 
 
 export default SignUpForm;
-
-
-
-
-// <label>Email</label>
-//                 <input type="email" required name='email' value={email} onChange={handleChange} />
-//                 <label>Password</label>
-//                 <input type="password" required name='password' value={password} onChange={handleChange} />
-//                 <label>Confirm Password</label>
-//                 <input type="password" required name='confirmPassword' value={confirmPassword} onChange={handleChange} />

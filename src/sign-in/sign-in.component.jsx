@@ -1,6 +1,6 @@
 import './sign-in.styles.scss';
 import { useState } from 'react';
-import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth, signInWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../utils/firebase/firebase.utils';
+import { createUserDocumentFromAuth, signInWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../utils/firebase/firebase.utils';
 import FormInput from '../components/form-input/form-input.component';
 import Button from '../components/button/button.component';
 
@@ -44,6 +44,7 @@ const SignInForm = () => {
                 default: console.log('error encountered', error);
                     break;
             }
+            resetFormFields();
 
         }
     };
