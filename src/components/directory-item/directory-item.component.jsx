@@ -1,5 +1,4 @@
 import { DirectoryItemContainer, BackgroundImage, Body } from './directory-item.styles.jsx';
-import { Link } from 'react-router-dom';
 
 const DirectoryItem = ({ category }) => {
 
