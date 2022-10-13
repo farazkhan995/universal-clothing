@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 export const ProductCartContainer = styled.div`
-  width: 100%;
+  width: 22vw;
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -18,6 +18,14 @@ export const ProductCartContainer = styled.div`
     position: absolute;
     top: 255px;
     display: none;
+
+    
+  @media screen and (max-width: 800px) {
+    display: block;
+    opacity: 0.9;
+    min-width: unset;
+    padding: 0 10px;
+  }
   }
   &:hover {
     img {
@@ -27,6 +35,18 @@ export const ProductCartContainer = styled.div`
       opacity: 0.85;
       display: flex;
     }
+  }
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+
+    &:hover {
+    img {
+      opacity: unset;
+    }
+    button {
+      opacity: unset;
+    }
+  }
   }
 `;
 

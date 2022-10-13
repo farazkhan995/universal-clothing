@@ -4,10 +4,12 @@ import Navigation from "./routes/navigation/navigation.component";
 import Authentication from "./routes/authentication/authentication.component";
 import Shop from "./routes/shop/shop.component";
 import CheckOut from "./routes/checkout/checkout.component";
-
+import { GlobalStyle } from "./global.styles";
 const App = () => {
 
   return (
+    <>
+    <GlobalStyle />
     <Routes>
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
@@ -17,6 +19,8 @@ const App = () => {
         <Route path="checkout" element={<CheckOut />} />
       </Route>
     </Routes>
+    </>
+
   );
 
 };

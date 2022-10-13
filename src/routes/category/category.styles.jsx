@@ -11,5 +11,12 @@ export const CategoryContainer = styled.div`
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
     row-gap: 50px;
+
+    @media screen and (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    align-items: center;
+    margin: auto;
+  }
 `;
 
